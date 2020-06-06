@@ -5,7 +5,7 @@ class video():
     def __init__(self, url):
         ydl_options = {
             'format':'best',
-            'outtmpl': '/home/topo/Desktop/COURSE/%(title)s',
+            'outtmpl': '%(title)s',
             'noplaylist':True,
         }
         with youtube_dl.YoutubeDL(ydl_options) as vdl:
